@@ -2,10 +2,12 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>My Home Page</title>
+    <title>{{ @title }}</title>
 </head>
 <body>
 <h1>{{ @title }}</h1>
+<p>{{ @temp }} degrees F</p>
+<p>{{ round((@temp) * (5.0/9.0), 2) }} C</p>
 
 </body>
 </html>
